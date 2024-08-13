@@ -1,0 +1,34 @@
+{
+    "name": "collab/module-additional-criticals",
+    "version": "1.0.0",
+    "description": "Magento 2 module which loads additional critical CSS files per specific layout handles",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Marcin Jędrzejewski",
+            "email": "m.jedrzejewski@collab.pl"
+        }
+    ],
+    "homepage": "https://github.com/collabpl/magento2-module-additional-criticals",
+    "keywords": [
+        "magento",
+        "magento2",
+        "pagespeed",
+        "critical css",
+        "cls optimization"
+    ],
+    "require": {
+        "magento/framework": "~103.0.4"
+    },
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Collab\\AdditionalCriticals\\": ""
+        }
+    }
+}

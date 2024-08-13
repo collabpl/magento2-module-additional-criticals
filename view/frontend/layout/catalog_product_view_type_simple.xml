@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Collab AdditionalCriticals for Magento
+ *
+ * @author      Marcin Jędrzejewski <m.jedrzejewski@collab.pl>
+ * @copyright   Copyright 2024 Collab
+ * @license     MIT
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="critical_css_block" remove="true"/>
+        <referenceBlock name="head.additional">
+            <block name="simple-product.critical.css" template="Magento_Theme::html/header/criticalCss.phtml" ifconfig="dev/css/use_css_critical_path">
+                <arguments>
+                    <argument name="criticalCssViewModel" xsi:type="object">Collab\AdditionalCriticals\Block\Html\Header\SimpleProductCriticalCss</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
